@@ -2,12 +2,17 @@ function firstLetter(inputString) {
     if (inputString) {
         return inputString[0];
     } else {
-        return undefined
+        return undefined;
     }
 }
 
 function lastLetter(inputString) {
-
+    if (inputString) {
+        var slice = inputString.slice(-1);
+        return slice;
+    } else {
+        return undefined;
+    }
 }
 
 function letterAtPosition(inputString, position) {
