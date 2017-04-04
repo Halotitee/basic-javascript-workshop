@@ -32,11 +32,30 @@ function addTwoNumbers(num1, num2) {
 }
 
 function multiplyTwoNumbers(num1, num2) {
-
+    if (typeof num1 === "number" && typeof num2 === "number"){
+        return num1 * num2;
+    } else {
+        return undefined;
+    }
 }
 
 function calculator(operation, num1, num2) {
-
+    if (typeof num1 === "number" && typeof num2 === "number"){
+        if (operation === "add") {
+            return num1 + num2;
+        } else if (operation === "sub") {
+            return num1 - num2;
+        } else if (operation === "mult") {
+            return num1 * num2;
+        } else if (operation === "div") {
+            return num1 / num2;
+        } else {
+            return undefined;
+        }
+        
+    } else {
+        return undefined;
+    }
 }
 
 function repeatString(inputString, numRepetitions) {
