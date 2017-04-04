@@ -59,7 +59,13 @@ function calculator(operation, num1, num2) {
 }
 
 function repeatString(inputString, numRepetitions) {
-
+    if(numRepetitions > 0) {
+        return inputString.repeat(numRepetitions);
+    } else if (numRepetitions <= 0) {
+        return inputString.repeat("");
+    } else {
+        return undefined;
+    }
 }
 
 function reverseString(inputString) {
