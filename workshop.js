@@ -24,8 +24,8 @@ function letterAtPosition(inputString, position) {
 }
 
 function addTwoNumbers(num1, num2) {
-    if ( num1 + num2) {
-        return addTwoNumbers();
+    if (typeof num1 === "number" && typeof num2 === "number"){
+        return num1 + num2;
     } else {
         return undefined;
     }
