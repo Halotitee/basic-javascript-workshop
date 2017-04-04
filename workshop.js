@@ -78,7 +78,11 @@ function longestWord(inputString) {
 }
 
 function capitalize(inputString) {
-
+    var splitStr = inputString.toLowerCase().split(' ');
+    for (var i = 0; i < splitStr.length; i++) {
+       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].slice(1);     
+   }
+   return splitStr.join(' '); 
 }
 
 function sumOfNumbers(arrayOfNumbers) {
